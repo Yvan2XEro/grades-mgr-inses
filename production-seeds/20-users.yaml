@@ -1,0 +1,141 @@
+meta:
+  version: "2024.12"
+  generatedAt: 2024-12-22T00:10:00Z
+  dataset: inses
+authUsers:
+  - code: ADMIN-ROOT
+    email: admin@inses.cm
+    name: Administrateur INSES
+    password: ChangeMe123!
+    role: admin
+  - code: TEACH-DR-MBALLA
+    email: dr.mballa@inses.cm
+    name: Dr. Mballa Jean
+    password: Password123!
+    role: admin
+  - code: TEACH-DR-NGUEMA
+    email: dr.nguema@inses.cm
+    name: Dr. Nguema Marie
+    password: Password123!
+    role: admin
+  - code: TEACH-INF-AKONO
+    email: inf.akono@inses.cm
+    name: Inf. Akono Patricia
+    password: Password123!
+    role: admin
+  - code: TEACH-KOMBO
+    email: kombo@inses.cm
+    name: Kombo Francis
+    password: Password123!
+    role: admin
+  - code: STUDENT-NDONG
+    email: ndong.student@inses.cm
+    name: Ndong Alain
+    password: Password123!
+    role: user
+  - code: STUDENT-EYEBE
+    email: eyebe.student@inses.cm
+    name: Eyebe Rachel
+    password: Password123!
+    role: user
+domainUsers:
+  - code: ADMIN-ROOT
+    authUserCode: ADMIN-ROOT
+    businessRole: administrator
+    firstName: Administrateur
+    lastName: INSES
+    primaryEmail: admin@inses.cm
+    status: active
+    organizationSlug: inses-institution
+    memberRole: owner
+  - code: TEACH-DR-MBALLA
+    authUserCode: TEACH-DR-MBALLA
+    businessRole: teacher
+    firstName: Jean
+    lastName: Mballa
+    primaryEmail: dr.mballa@inses.cm
+    status: active
+    organizationSlug: inses-institution
+  - code: TEACH-DR-NGUEMA
+    authUserCode: TEACH-DR-NGUEMA
+    businessRole: teacher
+    firstName: Marie
+    lastName: Nguema
+    primaryEmail: dr.nguema@inses.cm
+    status: active
+    organizationSlug: inses-institution
+  - code: TEACH-INF-AKONO
+    authUserCode: TEACH-INF-AKONO
+    businessRole: teacher
+    firstName: Patricia
+    lastName: Akono
+    primaryEmail: inf.akono@inses.cm
+    status: active
+    organizationSlug: inses-institution
+  - code: TEACH-KOMBO
+    authUserCode: TEACH-KOMBO
+    businessRole: teacher
+    firstName: Francis
+    lastName: Kombo
+    primaryEmail: kombo@inses.cm
+    status: active
+    organizationSlug: inses-institution
+  - code: STUDENT-NDONG
+    authUserCode: STUDENT-NDONG
+    businessRole: student
+    firstName: Alain
+    lastName: Ndong
+    primaryEmail: ndong.student@inses.cm
+    status: active
+  - code: STUDENT-EYEBE
+    authUserCode: STUDENT-EYEBE
+    businessRole: student
+    firstName: Rachel
+    lastName: Eyebe
+    primaryEmail: eyebe.student@inses.cm
+    status: active
+students:
+  - code: STUDENT-NDONG
+    domainUserCode: STUDENT-NDONG
+    classCode: INF25-BTS1A
+    classAcademicYearCode: AY-2025
+    registrationNumber: INSES25-0001
+  - code: STUDENT-EYEBE
+    domainUserCode: STUDENT-EYEBE
+    classCode: COMPT25-BTS1A
+    classAcademicYearCode: AY-2025
+    registrationNumber: INSES25-0002
+enrollments:
+  - studentCode: STUDENT-NDONG
+    classCode: INF25-BTS1A
+    classAcademicYearCode: AY-2025
+    academicYearCode: AY-2025
+    status: active
+    admissionType: normal
+  - studentCode: STUDENT-EYEBE
+    classCode: COMPT25-BTS1A
+    classAcademicYearCode: AY-2025
+    academicYearCode: AY-2025
+    status: active
+    admissionType: normal
+studentCourseEnrollments:
+  - studentCode: STUDENT-NDONG
+    classCourseCode: CC-ANAT101-INF1A
+    courseCode: ANAT101
+    sourceClassCode: INF25-BTS1A
+    sourceClassAcademicYearCode: AY-2025
+    academicYearCode: AY-2025
+    status: active
+    attempt: 1
+    creditsAttempted: 4
+    creditsEarned: 0
+  - studentCode: STUDENT-EYEBE
+    classCourseCode: CC-COMPT101-COMPT1A
+    courseCode: COMPT101
+    sourceClassCode: COMPT25-BTS1A
+    sourceClassAcademicYearCode: AY-2025
+    academicYearCode: AY-2025
+    status: active
+    attempt: 1
+    creditsAttempted: 5
+    creditsEarned: 0
