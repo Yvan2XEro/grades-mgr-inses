@@ -20,10 +20,13 @@ services:
       STORAGE_DRIVER: ${STORAGE_DRIVER:-local}
       STORAGE_LOCAL_ROOT: /usr/src/app/apps/server/storage/uploads
       STORAGE_LOCAL_PUBLIC_PATH: /uploads
+      RUN_SEED: "true"
     expose:
       - "3000"
     volumes:
       - server_uploads:/usr/src/app/apps/server/storage/uploads
+      - ./production-seeds:/usr/src/app/seed/local:ro
+
     depends_on:
       postgres:
         condition: service_healthy
