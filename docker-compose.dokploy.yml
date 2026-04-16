@@ -10,7 +10,7 @@ services:
     environment:
       NODE_ENV: production
       PORT: 3000
-      DATABASE_URL: ${DATABASE_URL:-postgres://grades:grades@postgres:5432/grades}
+      DATABASE_URL: postgres://${POSTGRES_USER:-grades}:${POSTGRES_PASSWORD:-grades}@postgres:5432/${POSTGRES_DB:-grades}
       BETTER_AUTH_SECRET: ${BETTER_AUTH_SECRET:-change-me}
       BETTER_AUTH_URL: ${BETTER_AUTH_URL:-https://${API_DOMAIN}}
       BETTER_AUTH_COOKIE_SAMESITE: ${BETTER_AUTH_COOKIE_SAMESITE:-none}
