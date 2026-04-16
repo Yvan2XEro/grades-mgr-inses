@@ -70,6 +70,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER:-grades}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-grades}
       POSTGRES_DB: ${POSTGRES_DB:-grades}
+      POSTGRES_INITDB_ARGS: "--auth-host=scram-sha-256 --auth-local=scram-sha-256"
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
